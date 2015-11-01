@@ -1,4 +1,2 @@
-### Clean Theme
-
-![Alt text](screen.png)
-
+# wangkun11.github.io
+my personal blog
