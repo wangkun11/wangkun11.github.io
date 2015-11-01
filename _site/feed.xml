@@ -3,10 +3,10 @@
   <channel>
     <title>WK&#39;s blog</title>
     <description>this is my blog</description>
-    <link>http://wangkun.ml/wangkun11/</link>
-    <atom:link href="http://wangkun.ml/wangkun11/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Nov 2015 21:50:06 +0800</pubDate>
-    <lastBuildDate>Sun, 01 Nov 2015 21:50:06 +0800</lastBuildDate>
+    <link>http://wangkun11.github.io/</link>
+    <atom:link href="http://wangkun11.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 01 Nov 2015 22:00:31 +0800</pubDate>
+    <lastBuildDate>Sun, 01 Nov 2015 22:00:31 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -44,8 +44,8 @@ func main() {
 
 </description>
         <pubDate>Sun, 27 Sep 2015 02:51:59 +0800</pubDate>
-        <link>http://wangkun.ml/wangkun11/jekyll/update/2015/09/27/clean-theme.html</link>
-        <guid isPermaLink="true">http://wangkun.ml/wangkun11/jekyll/update/2015/09/27/clean-theme.html</guid>
+        <link>http://wangkun11.github.io/jekyll/update/2015/09/27/clean-theme.html</link>
+        <guid isPermaLink="true">http://wangkun11.github.io/jekyll/update/2015/09/27/clean-theme.html</guid>
         
         
         <category>jekyll</category>
@@ -59,8 +59,8 @@ func main() {
         <description>&lt;p&gt;Hello Jekyll&lt;/p&gt;
 </description>
         <pubDate>Sat, 26 Sep 2015 00:00:00 +0800</pubDate>
-        <link>http://wangkun.ml/wangkun11/jekyll/update/2015/09/26/hello.html</link>
-        <guid isPermaLink="true">http://wangkun.ml/wangkun11/jekyll/update/2015/09/26/hello.html</guid>
+        <link>http://wangkun11.github.io/jekyll/update/2015/09/26/hello.html</link>
+        <guid isPermaLink="true">http://wangkun11.github.io/jekyll/update/2015/09/26/hello.html</guid>
         
         
         <category>jekyll</category>

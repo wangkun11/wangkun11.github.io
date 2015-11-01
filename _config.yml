@@ -4,8 +4,8 @@ email: 377816164@qq.com
 description: this is my blog
 safe: false
 highlighter: true
-baseurl: "/wangkun11" # the subpath of your site, e.g. /blog/
-url: "http://wangkun.ml" # the base hostname & protocol for your site
+#baseurl: "/wangkun11.github.io" # the subpath of your site, e.g. /blog/
+url: "http://wangkun11.github.io" # the base hostname & protocol for your site
 
 github_username:  wangkun11
 
