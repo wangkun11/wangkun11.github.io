@@ -2,7 +2,9 @@
 title: WK's blog
 email: 377816164@qq.com
 description: this is my blog
-baseurl: "/wangkun11.github.io/" # the subpath of your site, e.g. /blog/
+safe: false
+pygments: true
+baseurl: "/wangkun11" # the subpath of your site, e.g. /blog/
 url: "http://wangkun.ml" # the base hostname & protocol for your site
 
 github_username:  wangkun11
