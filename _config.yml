@@ -3,7 +3,7 @@ title: WK's blog
 email: 377816164@qq.com
 description: this is my blog
 safe: false
-pygments: true
+highlighter: true
 baseurl: "/wangkun11" # the subpath of your site, e.g. /blog/
 url: "http://wangkun.ml" # the base hostname & protocol for your site
 

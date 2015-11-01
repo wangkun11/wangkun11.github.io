@@ -3,10 +3,10 @@
   <channel>
     <title>WK&#39;s blog</title>
     <description>this is my blog</description>
-    <link>http://wangkun.ml/wangkun11.github.io//</link>
-    <atom:link href="http://wangkun.ml/wangkun11.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Nov 2015 21:18:29 +0800</pubDate>
-    <lastBuildDate>Sun, 01 Nov 2015 21:18:29 +0800</lastBuildDate>
+    <link>http://wangkun.ml/wangkun11/</link>
+    <atom:link href="http://wangkun.ml/wangkun11/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 01 Nov 2015 21:50:06 +0800</pubDate>
+    <lastBuildDate>Sun, 01 Nov 2015 21:50:06 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -16,20 +16,20 @@
 
 &lt;h2 id=&quot;sample-code&quot;&gt;Sample Code&lt;/h2&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;k&quot;&gt;package&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;package main
 
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;net/http&quot;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+import (
+    &amp;quot;net/http&amp;quot;
+)
 
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ResponseWriter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([]&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;byte&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello world.&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
+func response(rw http.ResponseWriter, request *http.Request) {
+    rw.Write([]byte(&amp;quot;Hello world.&amp;quot;))
+}
 
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HandleFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ListenAndServe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;:3000&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;x&quot;&gt; &lt;/span&gt;&lt;span class=&quot;no&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+func main() {
+    http.HandleFunc(&amp;quot;/&amp;quot;, response)
+    http.ListenAndServe(&amp;quot;:3000&amp;quot;, nil)
+}&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;list&quot;&gt;List&lt;/h2&gt;
 &lt;ul&gt;
@@ -44,8 +44,8 @@
 
 </description>
         <pubDate>Sun, 27 Sep 2015 02:51:59 +0800</pubDate>
-        <link>http://wangkun.ml/wangkun11.github.io//jekyll/update/2015/09/27/clean-theme.html</link>
-        <guid isPermaLink="true">http://wangkun.ml/wangkun11.github.io//jekyll/update/2015/09/27/clean-theme.html</guid>
+        <link>http://wangkun.ml/wangkun11/jekyll/update/2015/09/27/clean-theme.html</link>
+        <guid isPermaLink="true">http://wangkun.ml/wangkun11/jekyll/update/2015/09/27/clean-theme.html</guid>
         
         
         <category>jekyll</category>
@@ -59,8 +59,8 @@
         <description>&lt;p&gt;Hello Jekyll&lt;/p&gt;
 </description>
         <pubDate>Sat, 26 Sep 2015 00:00:00 +0800</pubDate>
-        <link>http://wangkun.ml/wangkun11.github.io//jekyll/update/2015/09/26/hello.html</link>
-        <guid isPermaLink="true">http://wangkun.ml/wangkun11.github.io//jekyll/update/2015/09/26/hello.html</guid>
+        <link>http://wangkun.ml/wangkun11/jekyll/update/2015/09/26/hello.html</link>
+        <guid isPermaLink="true">http://wangkun.ml/wangkun11/jekyll/update/2015/09/26/hello.html</guid>
         
         
         <category>jekyll</category>

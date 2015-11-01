@@ -10,9 +10,9 @@
   <meta name="description" content="SubheadingLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at mauris ante. Cras sit amet porta quam. Donec eu gravida elit. Sed a diam eget sem...">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/wangkun11.github.io//css/main.css">
-  <link rel="canonical" href="http://wangkun.ml/wangkun11.github.io//jekyll/update/2015/09/27/clean-theme.html">
-  <link rel="alternate" type="application/rss+xml" title="WK's blog" href="http://wangkun.ml/wangkun11.github.io//feed.xml" />
+  <link rel="stylesheet" href="/wangkun11/css/main.css">
+  <link rel="canonical" href="http://wangkun.ml/wangkun11/jekyll/update/2015/09/27/clean-theme.html">
+  <link rel="alternate" type="application/rss+xml" title="WK's blog" href="http://wangkun.ml/wangkun11/feed.xml" />
 </head>
 
 
@@ -22,12 +22,12 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/wangkun11.github.io//">WK's blog</a>
+    <a class="site-title" href="/wangkun11/">WK's blog</a>
 
     <nav class="site-nav">
         
           
-          <a class="page-link" href="/wangkun11.github.io//about/">About</a>
+          <a class="page-link" href="/wangkun11/about/">About</a>
           
         
           
@@ -57,20 +57,20 @@
 
 <h2 id="sample-code">Sample Code</h2>
 
-<figure class="highlight"><pre><code class="language-go" data-lang="go"><span class="k">package</span><span class="x"> </span><span class="n">main</span><span class="x">
+<figure class="highlight"><pre><code class="language-go" data-lang="go">package main
 
-</span><span class="k">import</span><span class="x"> </span><span class="p">(</span><span class="x">
-    </span><span class="s">"net/http"</span><span class="x">
-</span><span class="p">)</span><span class="x">
+import (
+    &quot;net/http&quot;
+)
 
-</span><span class="k">func</span><span class="x"> </span><span class="n">response</span><span class="p">(</span><span class="n">rw</span><span class="x"> </span><span class="n">http</span><span class="o">.</span><span class="n">ResponseWriter</span><span class="p">,</span><span class="x"> </span><span class="n">request</span><span class="x"> </span><span class="o">*</span><span class="n">http</span><span class="o">.</span><span class="n">Request</span><span class="p">)</span><span class="x"> </span><span class="p">{</span><span class="x">
-    </span><span class="n">rw</span><span class="o">.</span><span class="n">Write</span><span class="p">([]</span><span class="kt">byte</span><span class="p">(</span><span class="s">"Hello world."</span><span class="p">))</span><span class="x">
-</span><span class="p">}</span><span class="x">
+func response(rw http.ResponseWriter, request *http.Request) {
+    rw.Write([]byte(&quot;Hello world.&quot;))
+}
 
-</span><span class="k">func</span><span class="x"> </span><span class="n">main</span><span class="p">()</span><span class="x"> </span><span class="p">{</span><span class="x">
-    </span><span class="n">http</span><span class="o">.</span><span class="n">HandleFunc</span><span class="p">(</span><span class="s">"/"</span><span class="p">,</span><span class="x"> </span><span class="n">response</span><span class="p">)</span><span class="x">
-    </span><span class="n">http</span><span class="o">.</span><span class="n">ListenAndServe</span><span class="p">(</span><span class="s">":3000"</span><span class="p">,</span><span class="x"> </span><span class="no">nil</span><span class="p">)</span><span class="x">
-</span><span class="p">}</span></code></pre></figure>
+func main() {
+    http.HandleFunc(&quot;/&quot;, response)
+    http.ListenAndServe(&quot;:3000&quot;, nil)
+}</code></pre></figure>
 
 <h2 id="list">List</h2>
 <ul>
