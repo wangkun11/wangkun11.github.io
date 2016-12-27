@@ -1,15 +1,33 @@
----
-layout: default
----
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+{% include header.html %}
+<div class="container">
+    {% include navigation.html %}
+    <div class="main">
+        <h2> {{ page.title }} </h2>
+        {{ content }}
+        {% if page.categories %}
+        <div class="post_footer">
+          <p>Published on {{ page.date | date: "%b %d, %Y" }} in categories 
+          {% for cat in page.categories %}
+          <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+          {% endfor %}
+          <p>
+        </div>
+        {% endif %}
+        <ul class="prev_next">
+            {% if page.previous.url %}
+            <li>
+                <span>上一篇</span>
+                <a href="{{page.previous.url}}">{{page.previous.title}}</a>
+            </li>
+            {% endif %}
+            {% if page.next.url %}
+            <li>
+                <span>下一篇</span>
+                <a href="{{page.next.url}}">{{page.next.title}}</a>
+            </li>
+            {% endif %}
+        </ul>
+        {% include duoshuo.html %}
+    </div>
 </div>
+{% include footer.html %}
