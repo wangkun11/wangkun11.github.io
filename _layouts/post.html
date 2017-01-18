@@ -1,33 +1,17 @@
-{% include header.html %}
-<div class="container">
-    {% include navigation.html %}
-    <div class="main">
-        <h2> {{ page.title }} </h2>
-        {{ content }}
-        {% if page.categories %}
-        <div class="post_footer">
-          <p>Published on {{ page.date | date: "%b %d, %Y" }} in categories 
-          {% for cat in page.categories %}
-          <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
-          {% endfor %}
-          <p>
-        </div>
-        {% endif %}
-        <ul class="prev_next">
-            {% if page.previous.url %}
-            <li>
-                <span>上一篇</span>
-                <a href="{{page.previous.url}}">{{page.previous.title}}</a>
-            </li>
-            {% endif %}
-            {% if page.next.url %}
-            <li>
-                <span>下一篇</span>
-                <a href="{{page.next.url}}">{{page.next.title}}</a>
-            </li>
-            {% endif %}
-        </ul>
-        {% include duoshuo.html %}
-    </div>
-</div>
-{% include footer.html %}
+---
+layout: default
+---
+
+<body class="body-post">
+  <div class="post-wrapper">
+    <h1 class="post-title"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
+    <p class="post-date">{{ page.date|date:"%Y-%m-%d" }}</p>
+    {{ content }}
+    {% include disqus.html %}
+  </div>
+
+  {% include about.html %}
+
+  <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+  <script src="/js/post.js" type="text/javascript"></script>
+</body>

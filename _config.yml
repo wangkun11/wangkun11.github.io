@@ -1,13 +1,6 @@
-# Site settings
-title: 王坤的个人博客
-email: 377816164@qq.com
-description: 时间不在于你拥有多少，而在于你怎样使用
-safe: false
-highlighter: true
-#baseurl: "/wangkun11.github.io" # the subpath of your site, e.g. /blog/
-url: "http://wangkun11.github.io" # the base hostname & protocol for your site
+permalink: /:title
 
-github_username:  wangkun11
-
-# Build settings
-markdown: kramdown
+title: BeiYuu.com
+url: http://beiyuu.com
+feed: /atom.xml
+author_info: <a href="http://beiyuu.com/">BeiYuu</a>

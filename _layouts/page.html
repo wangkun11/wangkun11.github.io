@@ -1,10 +1,7 @@
-{% include header.html %}
-<div class="container">
-    {% include navigation.html %}
-    <div class="main">
-        <h2> {{ page.title }} </h2>
-        {{ content }}
-        {% include duoshuo.html %}
-    </div>
+---
+layout:           default
+---
+
+<div id="content">
+    {{ content }}
 </div>
-{% include footer.html %}
