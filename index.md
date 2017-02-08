@@ -7,9 +7,9 @@ layout: default
     <div class="aside">
       <div class="info-card">
         <h1>王坤</h1>
-        <h2>2015-2018 华中科技大学 武汉光电国家实验室 研究生 </h2>
+        <h2>2015-2018 华中科技大学 武汉光电国家实 验 室 研究生 </h2>
         <h2>2011-2015 武汉理工大学 计算机科学与技术学院 本科 </h2>
-        <h2>2013-2015 武汉大学 管理学院 双学位 </h2>
+        <h2>2013-2015 武汉    大学 经 济 与 管 理学  院 双学位 </h2>
         <a href="http://weibo.com/u/2704327061/" target="_blank"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
         <a href="https://www.douban.com/people/kingformyself/" target="_blank"><img src="http://www.douban.com/favicon.ico" alt="" width="22"/></a>
         <a href="http://instagram.com" target="_blank"><img src="http://d36xtkk24g8jdx.cloudfront.net/bluebar/00c6602/images/ico/favicon.ico" alt="" width="22"/></a>
