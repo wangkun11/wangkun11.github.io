@@ -1,0 +1,32 @@
+I";<h2 id="常用标记">常用标记</h2>
+
+<h3 id="1标题">1、标题</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># 表示标题，#号个数表示标记级数，最多为6个
+</code></pre></div></div>
+
+<h3 id="2列表">2、列表</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* 表示无序列表
+1 数字表示有序列表
+</code></pre></div></div>
+
+<h3 id="3代码块">3、代码块</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>在每一行开头缩进一个table，表示代码块
+</code></pre></div></div>
+
+<h3 id="4引用">4、引用</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; 表示引用
+</code></pre></div></div>
+
+<h3 id="5图片和链接">5、图片和链接</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Alt text](path) 表示图片，Markdown不能设置图片大小
+[Alt text](path) 表示链接
+</code></pre></div></div>
+
+<h2 id="图片和链接的测试">图片和链接的测试</h2>
+
+<h3 id="lina全图">Lina全图</h3>
+<p><img src="/images/Markdown/lena.jpg" alt="Lina" /></p>
+
+<h3 id="百度首页">百度首页</h3>
+<p><a href="http://baidu.com" title="Baidu链接测试">http://baidu.com</a></p>
+:ET

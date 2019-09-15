@@ -1,0 +1,7 @@
+I"<h2 id="1collection接口">1、Collection接口</h2>
+<p><img src="/images/Java集合框架/Collection集合体系继承树.png" alt="Collection集合框架继承关系" /></p>
+<h2 id="2map接口">2、Map接口</h2>
+<p><img src="/images/Java集合框架/Map体系继承树.png" alt="Map框架继承关系" /></p>
+<h2 id="3与历史集合结构的对应关系">3、与历史集合结构的对应关系</h2>
+<p><img src="/images/Java集合框架/历史集合框架对应关系.png" alt="历史集合框架对应关系" /></p>
+:ET
